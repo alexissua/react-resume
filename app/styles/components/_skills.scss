@@ -1,0 +1,70 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+
+}
+
+#left-container{
+  color: red;
+  text-align: center;
+  //border: 1px solid red;
+
+  .mdl-card{
+    width: 100%;
+    margin-left: 0.1%;
+  }
+
+  #profile{
+    text-align: left;
+
+    p{
+      padding-top: 2%;
+      line-height: 20px;
+    }
+
+    #profile-image{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      img{
+        max-width: 110px;
+        max-height: 110px;
+        margin-top: 20%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+        border-radius: 50%;
+      }
+    }
+
+
+  }
+
+  #movies{
+    margin-top: 2%;
+    border: 2px dashed black;
+
+    .movie{
+      border: 1px solid blue;
+    }
+  }
+
+}
+
+/*#right-container{
+  color: blue;
+  border: 1px solid blue;
+  p{
+    text-align: center;
+  }
+}*/
+
+#skills-table{
+  width: 100%;
+  border: 1px solid red;
+}

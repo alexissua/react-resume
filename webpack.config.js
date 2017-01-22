@@ -5,6 +5,7 @@ module.exports = {
   entry: [
     "script!jquery/dist/jquery.min.js",
     "script!foundation-sites/dist/foundation.min.js",
+    "script!material-design-lite/dist/material.min.js",
     "./app/app.jsx"
   ],
   externals: {
@@ -22,10 +23,15 @@ module.exports = {
   },
   resolve: {
   	root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components',
+      './app/api'
+    ],
   	alias: {
       applicationStyles: "app/styles/app.scss"
   	},
-    extensions: ["", ".js", ".jsx"]
+    extensions: ["", ".css", ".js", ".jsx"]
   },
   module: {
   	loaders: [
