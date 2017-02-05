@@ -8,8 +8,6 @@ var Education = React.createClass({
         <h3>Education Page</h3>
 
         <div className="row">
-          <LeftComponent />
-
           <div id="education-right-container" className="column medium-6 large-6">
             <p>Right Container</p>
 

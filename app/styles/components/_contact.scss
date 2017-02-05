@@ -1,0 +1,65 @@
+#contact-container{
+  #contact{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: rgba(0,0,0,0.54);
+
+    #contact-title{
+      margin: 0;
+      padding: 2%;
+      text-align: center;
+      //border: 1px solid red;
+
+      h2{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    #contact-card{
+      width: 75%;
+      margin: 0 auto;
+      padding-bottom: 2%;
+      //background-color: #F5F5F5;
+      background-color: #FAFAFA;
+      //border: 1px solid blue;
+
+      .profile-image{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        text-align: center;
+        //border: 1px dashed blue;
+
+        img{
+          max-width: 90px;
+          max-height: 90px;
+          margin: 0;
+          padding: 0;
+          border-radius: 50%;
+          border: 3px solid white;
+        }
+      }
+
+      #contact-card-buttons{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        text-align: center;
+
+        .contact-card-button{
+          margin-bottom: 2%;
+
+          a{
+            width: 70%;
+            font-weight: normal;
+            box-shadow: none;
+          }
+
+          a:hover{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,8 @@ var ResumeApp = function(props){
       </div>
 
       <br />
+      <br />
+      <br />
       <Footer />
     </div>
   );

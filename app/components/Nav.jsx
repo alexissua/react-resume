@@ -8,12 +8,9 @@ var Contact = require("Contact");
 var Nav = React.createClass({
   render: function(){
 
-    // Mantenemos los estilos acá para luego pasarlo al css::
-    var logoStyle = {
-      maxWidth: 100
-    };
-
-    var logoUrl = '../../images/logo-camarondigital-negro-rojo.png';
+    //var logoUrl = '../../images/logo-camarondigital-negro-rojo.png';
+    var logoUrl = '../../images/logo-camaron-blanco.png';
+    var RedlogoUrl = '../../images/logo-camaron-rojo.png';
 
     return (
 
@@ -23,19 +20,19 @@ var Nav = React.createClass({
             <img src={logoUrl} alt="Logo Camarón Digital" />
             <div className="mdl-layout-spacer"></div>
             <nav className="mdl-navigation mdl-layout--large-screen-only">
-              <IndexLink to="/" className="mdl-navigation__link" activeClassName="active-link">Skills</IndexLink>
-              <IndexLink to="/education" className="mdl-navigation__link" activeClassName="active-link">Education</IndexLink>
+              <IndexLink to="/" className="mdl-navigation__link" activeClassName="active-link">About</IndexLink>
+              <IndexLink to="/skills" className="mdl-navigation__link" activeClassName="active-link">Development</IndexLink>
               <IndexLink to="/contact" className="mdl-navigation__link" activeClassName="active-link">Contact</IndexLink>
             </nav>
           </div>
         </header>
         <div className="mdl-layout__drawer">
           <div className="logo-menu-expanded">
-            <img src={logoUrl} alt="Logo Camarón Digital" />
+            <img src={RedlogoUrl} alt="Logo Camarón Digital" />
           </div>
           <nav className="mdl-navigation">
-            <IndexLink to="/" className="mdl-navigation__link" activeClassName="active-link">Skills</IndexLink>
-            <IndexLink to="/education" className="mdl-navigation__link" activeClassName="active-link">Education</IndexLink>
+            <IndexLink to="/" className="mdl-navigation__link" activeClassName="active-link">About</IndexLink>
+            <IndexLink to="/skills" className="mdl-navigation__link" activeClassName="active-link">Development</IndexLink>
             <IndexLink to="/contact" className="mdl-navigation__link" activeClassName="active-link">Contact</IndexLink>
           </nav>
         </div>

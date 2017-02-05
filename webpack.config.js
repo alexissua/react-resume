@@ -42,7 +42,11 @@ module.exports = {
   			},
   			test: /\.jsx?$/,
   			exclude: /(node_modules|bower_components)/
-  		}
+  		},
+      {
+        test: /\.(png|jpg|jpeg|gif|woff)$/,
+        loader: 'url-loader'
+      }
   	]
   }
 };

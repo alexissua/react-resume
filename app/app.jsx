@@ -7,6 +7,7 @@ var ReactDOM = require("react-dom");
 var {Route, Router, IndexRoute, hashHistory} = require("react-router");
 
 var ResumeApp = require('ResumeApp');
+var About = require('About');
 var Skills = require('Skills');
 var Education = require('Education');
 var Contact = require('Contact');
@@ -24,7 +25,8 @@ require("style!css!sass!applicationStyles");
 ReactDOM.render(
   <Router history={hashHistory} >
     <Route path="/" component={ResumeApp}>
-      <IndexRoute component={Skills} />
+      <IndexRoute component={About} />
+      <Route path="skills" component={Skills} />
       <Route path="education" component={Education} />
       <Route path="contact" component={Contact} />
     </Route>
