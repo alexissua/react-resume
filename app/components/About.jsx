@@ -17,7 +17,8 @@ var About = React.createClass({
     // y actualizamos el estado del componente con estas peliculas::
     movieDataBase.getMovies().then((response) => {
       this.setState({
-        movies: response
+        movies: response,
+        showMovies: true
       });
     });
 
@@ -29,7 +30,6 @@ var About = React.createClass({
     var randomMovies = this.shuffle(movies);
 
     if(showMovies){
-
       return randomMovies.map((movie, index) => {
         if (index < 4){
 
@@ -65,23 +65,23 @@ var About = React.createClass({
   shuffle: function(array){
     var currentIndex = array.length, temporaryValue, randomIndex;
 
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
+    //Le agregamos este if para que solo busque en el top 10::
+    if (currentIndex <= 10){
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
 
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
 
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
     }
 
     return array;
-  },
-  handleShowMoviesButton: function(){
-
   },
   render: function(){
 
@@ -170,12 +170,12 @@ var About = React.createClass({
               </a>
             </div>
             <div className="hobby hobby-medium medium-4 large-4 columns">
-              <a href="#" target="_blank">
+              <a href="https://open.spotify.com/user/12143114479" target="_blank">
                 <img src={hobbyImg02} alt="Logo profile 02" />
               </a>
             </div>
             <div className="hobby hobby-right medium-4 large-4 columns">
-              <a href="#" target="_blank">
+              <a href="http://www.imdb.com/user/ur26194134/watchlist?sort=list_order,asc&page=1&mode=simple" target="_blank">
                 <img src={hobbyImg03} alt="Logo profile 03" />
               </a>
             </div>
@@ -184,9 +184,9 @@ var About = React.createClass({
           <div id="profile-show-more" className="row">
             <button className="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onClick={() => {
 
-              this.setState({showMovies: true});
-              $('#movies').css('display','inline-block');
-              $('#profile-show-more button i').html('remove');
+              //this.setState({showMovies: true});
+              //$('#movies').css('display','inline-block');
+              //$('#profile-show-more button i').html('remove');
 
               if (this.state.showMovies){
                 this.setState({showMovies: false});
