@@ -121,19 +121,19 @@
 	    hashHistory = _require.hashHistory;
 
 	var ResumeApp = __webpack_require__(231);
-	var About = __webpack_require__(375);
+	var About = __webpack_require__(376);
 	var Skills = __webpack_require__(344);
 	var Education = __webpack_require__(372);
 	var Contact = __webpack_require__(373);
 
 	// Load Foundation
-	__webpack_require__(377);
-	__webpack_require__(381);
+	__webpack_require__(378);
+	__webpack_require__(382);
 
 	$(document).foundation();
 
 	// Load CSS File::
-	__webpack_require__(383);
+	__webpack_require__(384);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -25511,8 +25511,8 @@
 	var moment = __webpack_require__(232);
 
 	var Nav = __webpack_require__(343);
-	var Sleeping = __webpack_require__(385);
-	var Footer = __webpack_require__(374);
+	var Sleeping = __webpack_require__(374);
+	var Footer = __webpack_require__(375);
 
 	var ResumeApp = React.createClass({
 	  displayName: 'ResumeApp',
@@ -42697,6 +42697,87 @@
 /* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var React = __webpack_require__(10);
+
+	var Sleeping = React.createClass({
+	  displayName: 'Sleeping',
+
+	  render: function render() {
+	    var chandlerSleepingImg = '../../images/chandler-sleeping.gif';
+	    var cardStyle = {
+	      color: '#fff',
+	      height: '176px',
+	      background: 'url(' + chandlerSleepingImg + ')'
+	    };
+
+	    return React.createElement(
+	      'div',
+	      { id: 'sleeping-container' },
+	      React.createElement(
+	        'div',
+	        { className: 'row' },
+	        React.createElement(
+	          'div',
+	          { id: 'sleeping-contact', className: 'medium-6 medium-centered large-6 large-centered columns' },
+	          React.createElement(
+	            'div',
+	            { className: 'small-6 small-centered columns' },
+	            React.createElement(
+	              'div',
+	              { className: 'profile-element profile-image' },
+	              React.createElement('img', { src: chandlerSleepingImg, alt: '' })
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { id: 'sleeping-contact-title' },
+	            React.createElement(
+	              'h2',
+	              null,
+	              'Thanks for stopping by but...'
+	            ),
+	            React.createElement(
+	              'p',
+	              null,
+	              'Unfortunately I\'m not available at this hour. Please come back in labor hours ',
+	              React.createElement(
+	                'strong',
+	                null,
+	                '(8:00 am to 6:00 pm UTC)'
+	              ),
+	              '. You won\'t get to see all the awesome stuff from my resume but you can always check my ',
+	              React.createElement(
+	                'strong',
+	                null,
+	                'LinkedIn'
+	              ),
+	              ' profile',
+	              React.createElement(
+	                'strong',
+	                null,
+	                ':'
+	              )
+	            ),
+	            React.createElement(
+	              'a',
+	              { href: 'https://pa.linkedin.com/in/alexissua/en', target: '_blank' },
+	              'Go to my LinkedIn profile'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Sleeping;
+
+/***/ },
+/* 375 */
+/***/ function(module, exports, __webpack_require__) {
+
 	"use strict";
 
 	var React = __webpack_require__(10);
@@ -42720,14 +42801,14 @@
 	module.exports = Footer;
 
 /***/ },
-/* 375 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(10);
 	var movieDataBase = __webpack_require__(371);
-	var $ = __webpack_require__(376);
+	var $ = __webpack_require__(377);
 
 	var About = React.createClass({
 	  displayName: 'About',
@@ -43059,7 +43140,7 @@
 	module.exports = About;
 
 /***/ },
-/* 376 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -52879,16 +52960,16 @@
 
 
 /***/ },
-/* 377 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(378);
+	var content = __webpack_require__(379);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(380)(content, {});
+	var update = __webpack_require__(381)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -52905,10 +52986,10 @@
 	}
 
 /***/ },
-/* 378 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(379)();
+	exports = module.exports = __webpack_require__(380)();
 	// imports
 
 
@@ -52919,7 +53000,7 @@
 
 
 /***/ },
-/* 379 */
+/* 380 */
 /***/ function(module, exports) {
 
 	/*
@@ -52975,7 +53056,7 @@
 
 
 /***/ },
-/* 380 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -53227,16 +53308,16 @@
 
 
 /***/ },
-/* 381 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(382);
+	var content = __webpack_require__(383);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(380)(content, {});
+	var update = __webpack_require__(381)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -53253,10 +53334,10 @@
 	}
 
 /***/ },
-/* 382 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(379)();
+	exports = module.exports = __webpack_require__(380)();
 	// imports
 
 
@@ -53267,16 +53348,16 @@
 
 
 /***/ },
-/* 383 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(384);
+	var content = __webpack_require__(385);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(380)(content, {});
+	var update = __webpack_require__(381)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -53293,10 +53374,10 @@
 	}
 
 /***/ },
-/* 384 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(379)();
+	exports = module.exports = __webpack_require__(380)();
 	// imports
 
 
@@ -53305,83 +53386,6 @@
 
 	// exports
 
-
-/***/ },
-/* 385 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(10);
-
-	var Sleeping = React.createClass({
-	  displayName: 'Sleeping',
-
-	  render: function render() {
-
-	    //var logoImg = '../../images/contact-profile-image.png';
-	    var chandlerSleepingImg = '../../images/chandler-sleeping.gif';
-	    var cardStyle = {
-	      color: '#fff',
-	      height: '176px',
-	      background: 'url(' + chandlerSleepingImg + ')'
-	    };
-
-	    return React.createElement(
-	      'div',
-	      { id: 'sleeping-container' },
-	      React.createElement(
-	        'div',
-	        { className: 'row' },
-	        React.createElement(
-	          'div',
-	          { id: 'sleeping-contact', className: 'medium-6 medium-centered large-6 large-centered columns' },
-	          React.createElement(
-	            'div',
-	            { className: 'small-6 small-centered columns' },
-	            React.createElement(
-	              'div',
-	              { className: 'profile-element profile-image' },
-	              React.createElement('img', { src: chandlerSleepingImg, alt: '' })
-	            )
-	          ),
-	          React.createElement(
-	            'div',
-	            { id: 'sleeping-contact-title' },
-	            React.createElement(
-	              'h2',
-	              null,
-	              'Thanks for stopping by but...'
-	            ),
-	            React.createElement(
-	              'p',
-	              null,
-	              'Unfortunately I\'m not available at this hour. Please come back in labor hours ',
-	              React.createElement(
-	                'strong',
-	                null,
-	                '(8:00 am to 6:00 pm UTC)'
-	              ),
-	              '. You won\'t get to see all the awesome from my resume but you can always check my LinkedIn profile',
-	              React.createElement(
-	                'strong',
-	                null,
-	                ':'
-	              )
-	            ),
-	            React.createElement(
-	              'a',
-	              { href: 'https://pa.linkedin.com/in/alexissua/en', target: '_blank' },
-	              'Go to my LinkedIn profile'
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-
-	module.exports = Sleeping;
 
 /***/ }
 /******/ ]);
