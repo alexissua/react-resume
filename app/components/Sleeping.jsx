@@ -25,7 +25,7 @@ var Sleeping = React.createClass({
             <div id="sleeping-contact-title">
               <h2>Thanks for stopping by but...</h2>
               <p>Unfortunately I'm not available at this hour. Please come back in labor hours <strong>(8:00 am to 6:00 pm UTC)</strong>. You won't get to see all the awesome from my resume but you can always check my LinkedIn profile<strong>:</strong></p>
-              <a href="#" target="_blank">Go to my LinkedIn profile</a>
+              <a href="https://pa.linkedin.com/in/alexissua/en" target="_blank">Go to my LinkedIn profile</a>
             </div>
           </div>
         </div>

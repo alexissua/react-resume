@@ -53371,7 +53371,7 @@
 	            ),
 	            React.createElement(
 	              'a',
-	              { href: '#', target: '_blank' },
+	              { href: 'https://pa.linkedin.com/in/alexissua/en', target: '_blank' },
 	              'Go to my LinkedIn profile'
 	            )
 	          )
