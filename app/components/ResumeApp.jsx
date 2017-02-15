@@ -6,12 +6,20 @@ var Sleeping = require('Sleeping');
 var Footer = require('Footer');
 
 var ResumeApp = React.createClass({
+  getDefaultProps: function(){
+    return{
+      minLaborHour: 5,
+      maxLaborHour: 23
+    }
+  },
+  propTypes: {
+    minLaborHour: React.PropTypes.number,
+    maxLaborHour: React.PropTypes.number
+  },
   renderElements: function(){
     var hourNumber = moment().hour();
-    var minLaborHour = 8;
-    var maxLaborHour = 18;
 
-    if ((hourNumber >= minLaborHour && hourNumber < maxLaborHour)){
+    if ((hourNumber >= this.props.minLaborHour && hourNumber < this.props.maxLaborHour)){
       //Se muestran los elementos completos del app:
       return(
         <div>

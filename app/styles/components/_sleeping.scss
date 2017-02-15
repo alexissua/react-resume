@@ -1,6 +1,6 @@
 #sleeping-container{
   #sleeping-contact{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-bottom: 4%;
     color: rgba(0,0,0,0.54);
 
@@ -16,20 +16,29 @@
         margin: 0;
         padding: 0;
         border-radius: 0%;
-        border: 4px solid #3f51b5;
+        border: 2px solid #3f51b5;
       }
     }
 
     #sleeping-contact-title{
-      margin: 0;
-      padding: 2%;
+      margin-top: 6%;
+      padding-top: 2%;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-bottom: 8%;
       text-align: center;
+      background-color: #F5F5F5;
 
       h2{
         color: black;
         font-size: 24px;
         font-weight: 300;
         line-height: normal;
+        text-align: center;
+      }
+
+      p{
+        text-align: justify;
       }
     }
   }

@@ -17,8 +17,7 @@ var About = React.createClass({
     // y actualizamos el estado del componente con estas peliculas::
     movieDataBase.getMovies().then((response) => {
       this.setState({
-        movies: response,
-        showMovies: true
+        movies: response
       });
     });
 
@@ -184,9 +183,9 @@ var About = React.createClass({
           <div id="profile-show-more" className="row">
             <button className="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onClick={() => {
 
-              //this.setState({showMovies: true});
-              //$('#movies').css('display','inline-block');
-              //$('#profile-show-more button i').html('remove');
+              this.setState({showMovies: true});
+              $('#movies').css('display','inline-block');
+              $('#profile-show-more button i').html('remove');
 
               if (this.state.showMovies){
                 this.setState({showMovies: false});
